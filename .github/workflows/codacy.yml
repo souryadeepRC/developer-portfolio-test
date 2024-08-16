@@ -45,6 +45,4 @@ jobs:
         env:
           CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
         run: |
-          bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
-          --partial \
-          --coverage-reports coverage/clover.xml
+          bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r <coverage report coverage/clover.xml>
