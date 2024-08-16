@@ -42,8 +42,9 @@ jobs:
       - name: Run test coverage
         run: npm run test
       - name: Upload coverage report to Codacy
+        env:
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
         run: |
           bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
           --partial \
-          --codacy-token ${{ secrets.CODACY_PROJECT_TOKEN }} \
           --coverage-reports coverage/clover.xml
