@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/61523b225f784eca89cba4dac1db627a)](https://app.codacy.com/gh/souryadeepRC/developer-portfolio?utm_source=github.com&utm_medium=referral&utm_content=souryadeepRC/developer-portfolio&utm_campaign=Badge_Grade)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
