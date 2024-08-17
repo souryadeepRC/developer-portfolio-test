@@ -1,7 +1,7 @@
 import "./App.scss";
 
 function App() {
-  const name = "TEST";
+  const displayName = "TEST";
   return <div className="app-container">Developer portfolio Test</div>;
 }
 
