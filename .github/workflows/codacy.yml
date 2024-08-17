@@ -6,12 +6,8 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     branches: ["develop"]
-  schedule:
-    - cron: "32 18 * * 0"
-
 permissions:
   contents: read
-
 jobs:
   codacy-security-scan:
     permissions:
@@ -46,3 +42,10 @@ jobs:
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: 'coverage/clover.xml'
+      - name: Run Codacy Analysis
+        env:
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+        run: |
+          # Example command to run Codacy analysis
+          # Adjust this according to Codacy’s CLI or API instructions
+          codacy-analysis-cli --project-token $CODACY_PROJECT_TOKEN
