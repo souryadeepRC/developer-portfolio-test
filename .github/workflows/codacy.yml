@@ -36,6 +36,6 @@ jobs:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: "coverage/clover.xml"
       - name: Run Codacy Analysis
-        uses: codacy/codacy-analysis-cli-action@v1.3.0
+        uses: codacy/codacy-analysis-cli-action@v1
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
