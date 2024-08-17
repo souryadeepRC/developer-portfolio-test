@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/61523b225f784eca89cba4dac1db627a)](https://app.codacy.com/gh/souryadeepRC/developer-portfolio?utm_source=github.com&utm_medium=referral&utm_content=souryadeepRC/developer-portfolio&utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e644dd5b9c3244b695f6fab2111a0214)](https://app.codacy.com/gh/souryadeepRC/developer-portfolio/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/e644dd5b9c3244b695f6fab2111a0214)](https://app.codacy.com/gh/souryadeepRC/developer-portfolio/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
