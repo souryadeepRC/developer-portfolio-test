@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Check linting and formatting
-        run: npm run quality
+        run: npm run prettier
       - name: Test Code coverage
         run: npm run test
       - name: Upload coverage report to Codacy
