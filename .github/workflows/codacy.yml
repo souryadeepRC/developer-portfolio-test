@@ -42,6 +42,12 @@ jobs:
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: 'coverage/clover.xml'
+      - name: Install Codacy CLI
+        run: |
+          wget https://downloads.codacy.com/codacy-analysis-cli-linux-1.0.0.zip -O codacy-analysis-cli.zip
+          unzip codacy-analysis-cli.zip
+          chmod +x codacy-analysis-cli
+          sudo mv codacy-analysis-cli /usr/local/bin/
       - name: Run Codacy Analysis
         env:
           CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
