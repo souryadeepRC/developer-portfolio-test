@@ -8,7 +8,7 @@ on:
     branches: ["develop"]
 
 jobs:
-  coverage:
+  code-quality-scan:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -35,5 +35,3 @@ jobs:
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: "coverage/clover.xml"
-      - name: Codacy Analysis CLI
-        uses: codacy/codacy-analysis-cli-action@v4.4.5
